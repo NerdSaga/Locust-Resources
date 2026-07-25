@@ -1,0 +1,162 @@
+[
+  {
+    "id": "download-app",
+    "importance": 5,
+    "order": 1,
+    "question": "Where can I download the app?",
+    "answer": "Download the Locust app from the App Store or Google Play.",
+    "keywords": ["download", "install", "app", "app store", "apple", "iphone", "ios", "google play", "android"],
+    "url": "faq/download-app.html",
+    "linkLabel": "View download options"
+  },
+  {
+    "id": "use-web",
+    "importance": 5,
+    "order": 2,
+    "question": "Can I continue to use Locust on the web?",
+    "answer": "Yes. Locust will continue to support the v2 module on the web.",
+    "keywords": ["web", "website", "browser", "desktop", "computer", "online", "locust v2"],
+    "url": "faq/use-locust-on-web.html",
+    "linkLabel": "Learn about web access"
+  },
+  {
+    "id": "find-mfs",
+    "importance": 5,
+    "order": 3,
+    "question": "How do I find the meeting for field service (MFS)?",
+    "answer": "Use the video guide to find your upcoming meeting for field service, review its details, and get directions.",
+    "keywords": ["mfs", "meeting for field service", "field service", "service meeting", "meeting", "meet", "upcoming", "directions"],
+    "url": "#find-meeting",
+    "linkLabel": "Watch the meeting guide"
+  },
+  {
+    "id": "shift-information",
+    "importance": 5,
+    "order": 4,
+    "question": "Where do I find emergency, parking, and other information for my shift?",
+    "answer": "",
+    "keywords": ["emergency", "parking", "shift information", "shift details", "instructions", "safety", "contact", "notes"],
+    "url": "",
+    "linkLabel": ""
+  },
+  {
+    "id": "navigate-emergency",
+    "importance": 5,
+    "order": 5,
+    "question": "How do I map or navigate to the emergency locations on my shift?",
+    "answer": "",
+    "keywords": ["map", "navigate", "navigation", "directions", "emergency location", "location", "address", "route", "maps", "shift"],
+    "url": "",
+    "linkLabel": ""
+  },
+  {
+    "id": "view-shifts",
+    "importance": 4,
+    "order": 6,
+    "question": "Where do I view all my shifts?",
+    "answer": "See where to find all your upcoming and previous shifts in one place.",
+    "keywords": ["shifts", "my shifts", "schedule", "calendar", "upcoming", "previous", "accepted shifts", "assignments"],
+    "url": "faq/view-all-shifts.html",
+    "linkLabel": "View the shifts guide"
+  },
+  {
+    "id": "time-away",
+    "importance": 4,
+    "order": 7,
+    "question": "Where do I set time away?",
+    "answer": "Use time away to mark dates when you are unavailable to volunteer.",
+    "keywords": ["time away", "away", "vacation", "unavailable", "absence", "dates", "leave", "out of town"],
+    "url": "faq/set-time-away.html",
+    "linkLabel": "View the time away guide"
+  },
+  {
+    "id": "availability",
+    "importance": 4,
+    "order": 8,
+    "question": "Where do I change my availability?",
+    "answer": "Follow the guide to review and update your regular availability.",
+    "keywords": ["availability", "available", "schedule", "days", "times", "hours", "change availability", "update availability"],
+    "url": "faq/change-availability.html",
+    "linkLabel": "View the availability guide"
+  },
+  {
+    "id": "other-locations",
+    "importance": 4,
+    "order": 9,
+    "question": "I am a new volunteer. How do I access other locations in the app?",
+    "answer": "",
+    "keywords": ["new volunteer", "other locations", "access location", "join location", "add location", "manage locations", "territory", "congregation"],
+    "url": "#manage-location",
+    "linkLabel": "Watch the location guide"
+  },
+  {
+    "id": "locked-out",
+    "importance": 5,
+    "order": 10,
+    "question": "I locked myself out of my Locust account. What should I do?",
+    "answer": "Try the sign-in checks and password-reset steps in the sign-in guide.",
+    "keywords": ["locked out", "lockout", "cannot login", "can't log in", "sign in", "login", "password", "reset password", "account", "access"],
+    "url": "faq/sign-in-help.html",
+    "linkLabel": "View sign-in help"
+  },
+  {
+    "id": "assigned-favorite-locations",
+    "importance": 3,
+    "order": 11,
+    "question": "What is the difference between Assigned Locations and Favorite Locations?",
+    "answer": "",
+    "keywords": ["assigned locations", "favorite locations", "favourite locations", "location difference", "assigned", "favorite", "locations"],
+    "url": "",
+    "linkLabel": ""
+  },
+  {
+    "id": "favorite-frequent-locations",
+    "importance": 3,
+    "order": 12,
+    "question": "Can I favorite locations where I frequently schedule shifts?",
+    "answer": "",
+    "keywords": ["favorite", "favourite", "frequent locations", "save location", "bookmark", "preferred location", "schedule shifts", "often"],
+    "url": "",
+    "linkLabel": ""
+  },
+  {
+    "id": "shift-colors",
+    "importance": 4,
+    "order": 13,
+    "question": "What do orange and blue shifts mean when key men are needed?",
+    "answer": "",
+    "keywords": ["orange", "blue", "shift colors", "colours", "key men", "keyman", "key men needed", "color meaning", "legend"],
+    "url": "",
+    "linkLabel": ""
+  },
+  {
+    "id": "accepted-web-shifts",
+    "importance": 5,
+    "order": 14,
+    "question": "What will happen to shifts I accepted on the website after August 1?",
+    "answer": "",
+    "keywords": ["august 1", "aug 1", "accepted shifts", "website shifts", "existing shifts", "migration", "transfer", "scheduled", "web"],
+    "url": "",
+    "linkLabel": ""
+  },
+  {
+    "id": "app-overview-video",
+    "importance": 4,
+    "order": 15,
+    "question": "Everything looks different. Is there a video explaining how to use the app?",
+    "answer": "Start with the essential video guides on this page for short walkthroughs of common Locust tasks.",
+    "keywords": ["video", "tutorial", "walkthrough", "overview", "different", "new app", "overwhelmed", "how to use", "training", "help"],
+    "url": "#video-guides-title",
+    "linkLabel": "Browse the video guides"
+  },
+  {
+    "id": "contact-help",
+    "importance": 5,
+    "order": 16,
+    "question": "Who should I contact for help using the app?",
+    "answer": "Contact support and include what you were trying to do, what happened, and the device you were using.",
+    "keywords": ["contact", "support", "help", "person", "assistance", "training", "question", "problem", "issue", "email"],
+    "url": "faq/contact-support.html",
+    "linkLabel": "View support options"
+  }
+]

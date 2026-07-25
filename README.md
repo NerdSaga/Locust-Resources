@@ -1,6 +1,10 @@
-# Locust v2 Volunteer Help Center
+# Locust v2 Sacramento Volunteer Help Center
 
 A dependency-free FAQ site for GitHub Pages, built with HTML, CSS, and JavaScript.
+
+## Add or edit FAQs
+
+Edit `data/faqs.json`. Each FAQ can include a question, answer, keyword list, guide URL, link label, `importance`, and `order`. Importance uses a 1–5 scale, with 5 shown first. The `order` number breaks ties between FAQs with the same importance. Keywords can be short terms or phrases that a volunteer is likely to search.
 
 ## Add the videos
 
@@ -8,7 +12,7 @@ Place the MP4 files listed in `videos/README.md` inside the `videos` folder. The
 
 ## Preview locally
 
-Open `index.html` in a browser, or run any simple static file server from this folder.
+Open `index.html` directly or run any simple static file server from this folder. A small JavaScript fallback supports direct `file://` previews; the published site loads the full FAQ index from JSON.
 
 ## Publish on GitHub Pages
 

@@ -4,9 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="How-to videos and instructions for Locust v2 volunteers.">
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
   <meta name="theme-color" content="#202534">
-  <title>Volunteer Help Center | Locust v2</title>
+  <title>Sacramento Volunteer Help Center | Locust v2</title>
   <link rel="stylesheet" href="css/styles.css">
+  <script src="data/faqs-fallback.js" defer></script>
   <script src="js/main.js" defer></script>
 </head>
 <body>
@@ -14,11 +16,20 @@
 
   <header class="site-header">
     <div class="shell header-inner">
-      <a class="brand" href="index.html" aria-label="Locust v2 help center home">
+      <a class="brand" href="index.html" aria-label="Locust v2 help center home" data-home-link>
         <span class="brand-mark" aria-hidden="true">L</span>
-        <span>Locust v2 <small>Volunteer help center</small></span>
+        <span>Locust v2 <small>Sacramento Volunteer Help Center</small></span>
       </a>
-      <a class="header-link" href="#more-help">Browse all help</a>
+      <form class="header-search" role="search">
+        <label class="visually-hidden" for="faq-search">Search frequently asked questions</label>
+        <div class="search-control">
+          <svg aria-hidden="true" viewBox="0 0 24 24" width="22" height="22">
+            <path d="m21 21-4.35-4.35m2.35-5.15A7.5 7.5 0 1 1 4 11.5a7.5 7.5 0 0 1 15 0Z"></path>
+          </svg>
+          <input id="faq-search" name="q" type="search" placeholder="Search FAQs" autocomplete="off" data-header-search-input>
+          <button type="button" class="search-clear" data-header-search-clear hidden>Clear</button>
+        </div>
+      </form>
     </div>
   </header>
 
@@ -94,59 +105,26 @@
         <div class="section-heading">
           <p class="eyebrow">More answers</p>
           <h2 id="more-help-title">Frequently asked questions</h2>
-          <p>Open a topic, then follow the link to a lightweight instruction page.</p>
+          <p>Search by a word or short phrase, such as “parking,” “password,” or “time away.”</p>
         </div>
 
-        <div class="accordion" data-accordion>
-          <div class="accordion-item">
-            <h3><button type="button" aria-expanded="false" aria-controls="answer-download" id="question-download"><span>Where can I download the app?</span><span class="accordion-icon" aria-hidden="true"></span></button></h3>
-            <div class="accordion-panel" id="answer-download" role="region" aria-labelledby="question-download" hidden>
-              <p>Download the Locust app from the App Store or Google Play.</p>
-              <a class="button" href="faq/download-app.html">View download options <span aria-hidden="true">→</span></a>
+        <div class="faq-search" data-faq-search>
+          <form class="section-search" role="search">
+            <label for="faq-section-search">What can we help you find?</label>
+            <div class="search-control">
+              <svg aria-hidden="true" viewBox="0 0 24 24" width="24" height="24">
+                <path d="m21 21-4.35-4.35m2.35-5.15A7.5 7.5 0 1 1 4 11.5a7.5 7.5 0 0 1 15 0Z"></path>
+              </svg>
+              <input id="faq-section-search" name="faq-q" type="search" placeholder="Try “parking,” “shifts,” or “locked out”" autocomplete="off" data-section-search-input>
+              <button type="button" class="search-clear" data-section-search-clear hidden>Clear</button>
             </div>
-          </div>
-          <div class="accordion-item">
-            <h3><button type="button" aria-expanded="false" aria-controls="answer-web" id="question-web"><span>Can I continue to use Locust on the web?</span><span class="accordion-icon" aria-hidden="true"></span></button></h3>
-            <div class="accordion-panel" id="answer-web" role="region" aria-labelledby="question-web" hidden>
-              <p>Yes. Locust will continue to support the v2 module on the web.</p>
-              <a class="button" href="faq/use-locust-on-web.html">Learn about web access <span aria-hidden="true">→</span></a>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h3><button type="button" aria-expanded="false" aria-controls="answer-availability" id="question-availability"><span>Where do I change my availability?</span><span class="accordion-icon" aria-hidden="true"></span></button></h3>
-            <div class="accordion-panel" id="answer-availability" role="region" aria-labelledby="question-availability" hidden>
-              <p>Follow the video guide to review and update your regular availability.</p>
-              <a class="button" href="faq/change-availability.html">View availability guide <span aria-hidden="true">→</span></a>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h3><button type="button" aria-expanded="false" aria-controls="answer-shifts" id="question-shifts"><span>Where do I view all my shifts?</span><span class="accordion-icon" aria-hidden="true"></span></button></h3>
-            <div class="accordion-panel" id="answer-shifts" role="region" aria-labelledby="question-shifts" hidden>
-              <p>See where to find upcoming and previous shifts in one place.</p>
-              <a class="button" href="faq/view-all-shifts.html">View shifts guide <span aria-hidden="true">→</span></a>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h3><button type="button" aria-expanded="false" aria-controls="answer-time-away" id="question-time-away"><span>Where do I set time away?</span><span class="accordion-icon" aria-hidden="true"></span></button></h3>
-            <div class="accordion-panel" id="answer-time-away" role="region" aria-labelledby="question-time-away" hidden>
-              <p>Use time away to mark dates when you are unavailable to volunteer.</p>
-              <a class="button" href="faq/set-time-away.html">View time away guide <span aria-hidden="true">→</span></a>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h3><button type="button" aria-expanded="false" aria-controls="answer-password" id="question-password"><span>What should I do if I cannot sign in?</span><span class="accordion-icon" aria-hidden="true"></span></button></h3>
-            <div class="accordion-panel" id="answer-password" role="region" aria-labelledby="question-password" hidden>
-              <p>Try quick sign-in checks or follow the steps to reset your password.</p>
-              <a class="button" href="faq/sign-in-help.html">View sign-in help <span aria-hidden="true">→</span></a>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h3><button type="button" aria-expanded="false" aria-controls="answer-support" id="question-support"><span>How do I contact support?</span><span class="accordion-icon" aria-hidden="true"></span></button></h3>
-            <div class="accordion-panel" id="answer-support" role="region" aria-labelledby="question-support" hidden>
-              <p>Find out what information to include so the support team can help quickly.</p>
-              <a class="button" href="faq/contact-support.html">View support options <span aria-hidden="true">→</span></a>
-            </div>
-          </div>
+          </form>
+          <p class="search-status" data-search-status role="status" aria-live="polite">Loading FAQs…</p>
+          <div class="search-results" data-search-results></div>
+
+          <noscript>
+            <p class="search-error">JavaScript is required to search the FAQs. Please enable JavaScript or contact support.</p>
+          </noscript>
         </div>
       </div>
     </section>
@@ -154,8 +132,11 @@
 
   <footer class="site-footer">
     <div class="shell footer-inner">
-      <p><strong>Locust v2</strong><br><span>Volunteer help center</span></p>
-      <a href="#main-content">Back to top <span aria-hidden="true">↑</span></a>
+      <p><strong>Locust v2</strong><br><span>Sacramento Volunteer Help Center</span></p>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="accessibility.html">Accessibility statement</a>
+        <a href="#main-content">Back to top <span aria-hidden="true">↑</span></a>
+      </nav>
     </div>
   </footer>
 </body>
