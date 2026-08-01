@@ -1,75 +1,93 @@
 <!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="How to contact Locust v2 volunteer support.">
-    <title>Contact Support | Locust v2 Help</title>
-    <link rel="stylesheet" href="../css/styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact Locust v2 Sacramento volunteer support.">
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+  <meta name="theme-color" content="#202534">
+  <title>Contact Support | Locust v2 Sacramento</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <script src="../data/contact-persons-fallback.js" defer></script>
+  <script src="../js/contact-support.js" defer></script>
 </head>
+<body class="article-page">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
-<body class="article-page"><a class="skip-link" href="#main-content">Skip to main content</a>
-    <header class="site-header">
-        <div class="shell header-inner"><a class="brand" href="../index.html"><span class="brand-mark"
-                    aria-hidden="true">L</span><span>Locust v2 <small>Sacramento Volunteer Help
-                        Center</small></span></a></div>
-    </header>
-    <main id="main-content">
-        <article class="shell article">
-            <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../index.html">Help center</a> / Contact support
-            </nav>
-            <p class="eyebrow">Still need help?</p>
-            <h1>Contact the support team</h1>
-            <p class="lede">Include a few useful details so the team can understand and solve your issue quickly.</p>
-            <section class="instruction-card">
-                <h2>Before you contact us</h2>
-                <ul>
-                    <li>Note whether you are using the mobile app or website.</li>
-                    <li>Include the page or feature where the issue happened.</li>
-                    <li>Describe what you expected and what happened instead.</li>
-                    <li>Add a screenshot if it does not contain private information.</li>
-                </ul>
-                <p class="note"><strong>Setup needed:</strong> Add your organization’s support email address or support
-                    form link here.</p>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="../index.html" aria-label="Sacramento Volunteer Help Center home">
+        <span class="brand-mark" aria-hidden="true">L</span>
+        <span>Locust v2 <small>Sacramento Volunteer Help Center</small></span>
+      </a>
+    </div>
+  </header>
 
-                <!-- <div class="contact-info-panel">
-                    <p><b>Jessica James</b> (916) 402-7526 strawberrysunami@me.com</p>
-                </div>
-                
-                <div class="contact-info-panel">
-                    <p><b>Caitlyn Karver</b> (916) 342-0601 justktkarver@gmail.com</p>
-                </div>
+  <main id="main-content">
+    <article class="shell article contact-page">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="../index.html">Help center</a> / Contact support
+      </nav>
 
-                <div class="contact-info-panel">
-                    <p><b>Talia Wilmes</b> (402) 360-4705 theroseofthecentury@gmail.com</p>
-                </div>
+      <p class="eyebrow">Still need help?</p>
+      <h1>Contact the support team</h1>
+      <p class="lede">Choose email support or check whether the Sacramento Google Voice support line is currently open.</p>
 
-                <div class="contact-info-panel">
-                    <p><b>Cristal Torres Ramirez</b> (916) 545-4845 cristaltorres.1209@gmail.com</p>
-                </div>
+      <section class="instruction-card email-support-card" aria-labelledby="email-support-title">
+        <h2 id="email-support-title">Email support</h2>
+        <p>Include what you were trying to do, what happened, and whether you were using the mobile app or website.</p>
+        <a class="button" href="mailto:REPLACE_WITH_SUPPORT_EMAIL" data-support-email>Email support <span aria-hidden="true">→</span></a>
+        <p class="setup-flag" data-email-setup><strong>Setup needed:</strong> Replace the support email address in <code>data/contact_persons.json</code>.</p>
+      </section>
 
-                <div class="contact-info-panel">
-                    <p><b>Madai Torres</b> (916) 903-8984 01madaitorres@gmail.com</p>
-                </div>
-                
-                <div class="contact-info-panel">
-                    <p><b>Roxanne Volkmann</b> (917) 821-3640 rox.spw@gmail.com</p>
-                </div>
-
-                <div class="contact-info-panel">
-                    <p><b>Jessica Berkley</b> (231) 330-5201 jesslorenberkley@gmail.com</p>
-                </div> -->
-                
-            </section>
-        </article>
-    </main>
-    <footer class="site-footer">
-        <div class="shell footer-inner">
-            <p><strong>Locust v2</strong><br><span>Sacramento Volunteer Help Center</span></p><a
-                href="../index.html">Return to help center</a>
+      <section class="instruction-card phone-support-card" aria-labelledby="phone-support-title" data-phone-support>
+        <div class="support-heading">
+          <div>
+            <p class="eyebrow">Live phone support</p>
+            <h2 id="phone-support-title">Locust v2 Sacramento</h2>
+          </div>
+          <p class="schedule-time" data-current-time>Checking Sacramento time…</p>
         </div>
-    </footer>
-</body>
 
+        <div data-availability-status role="status" aria-live="polite">
+          <p>Checking phone-support availability…</p>
+        </div>
+
+        <div class="call-support-options" data-call-support></div>
+
+        <details class="test-controls">
+          <summary>Test the schedule at another date and time</summary>
+          <div class="test-controls-inner">
+            <label for="schedule-override">Override Sacramento date and time</label>
+            <input id="schedule-override" type="datetime-local" data-time-override>
+            <div class="test-actions">
+              <button class="button" type="button" data-apply-override>Apply test time</button>
+              <button class="button button-secondary" type="button" data-clear-override>Use current time</button>
+            </div>
+            <p class="legal-copy">This testing control only changes the schedule shown in your browser.</p>
+          </div>
+        </details>
+      </section>
+
+      <section class="instruction-card" aria-labelledby="support-hours-title">
+        <h2 id="support-hours-title">Phone-support hours</h2>
+        <div class="schedule-row">
+          <strong>Every day</strong>
+          <span>8:00 AM–8:00 PM Pacific Time</span>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <a class="footer-brand" href="../index.html" aria-label="Sacramento Volunteer Help Center home"><span class="brand-mark" aria-hidden="true">L</span><span><strong>Locust v2</strong><small>Sacramento Volunteer Help Center</small></span></a>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="../accessibility.html">Accessibility statement</a>
+        <a href="#main-content">Back to top <span aria-hidden="true">↑</span></a>
+      </nav>
+    </div>
+  </footer>
+</body>
 </html>
