@@ -28,7 +28,7 @@ Push the folder to a GitHub repository, then open **Settings → Pages** and pub
 
 - Replace the starter instruction text with the confirmed app workflow.
 - Add your real support contact to `faq/contact-support.html`.
-- Add the App Store and Google Play listing links to `faq/download-app.html`.
+- Confirm the App Store and Google Play listing links in the homepage download card.
 - Add the Locust web app link to `faq/use-locust-on-web.html`.
 - Test every video with captions. Add a `<track kind="captions">` file for each video when captions are ready.
 - Confirm the app and organization names throughout the site.

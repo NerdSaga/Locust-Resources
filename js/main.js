@@ -12,8 +12,13 @@ if (faqSearch) {
   const results = faqSearch.querySelector('[data-search-results]');
   const stopWords = new Set(['a', 'an', 'and', 'are', 'can', 'do', 'does', 'for', 'how', 'i', 'in', 'is', 'it', 'my', 'of', 'on', 'the', 'to', 'what', 'where', 'will']);
   let faqs = window.locustFaqs || [];
-  let query = '';
-  let searchSource = '';
+  let query = new URLSearchParams(window.location.search).get('q')?.trim() || '';
+  let searchSource = query ? 'header' : '';
+
+  if (query) {
+    headerInput.value = query;
+    sectionInput.value = query;
+  }
 
   const normalize = (value) => value
     .toLowerCase()
@@ -29,6 +34,11 @@ if (faqSearch) {
   const contentOrder = (a, b) =>
     (Number(b.importance) || 0) - (Number(a.importance) || 0)
     || (Number(a.order) || 999) - (Number(b.order) || 999);
+
+  const sentenceCount = (value) => {
+    const sentences = String(value || '').match(/[^.!?]+[.!?]+|[^.!?]+$/g);
+    return sentences ? sentences.filter((sentence) => sentence.trim()).length : 0;
+  };
 
   const scoreFaq = (faq, rawQuery) => {
     const normalizedQuery = normalize(rawQuery);
@@ -62,17 +72,63 @@ if (faqSearch) {
     }
     container.append(answer);
 
-    if (faq.url) {
+    if (faq.steps?.length) {
+      const list = document.createElement('ol');
+      list.className = 'faq-steps';
+      faq.steps.forEach((step) => {
+        const item = document.createElement('li');
+        const url = String(step).match(/https:\/\/[^\s]+/);
+        if (url) {
+          item.append(document.createTextNode(String(step).replace(url[0], '')));
+          const link = document.createElement('a');
+          link.href = url[0].replace(/[.,]$/, '');
+          link.textContent = 'open password recovery';
+          item.append(link);
+        } else {
+          item.textContent = step;
+        }
+        list.append(item);
+      });
+      container.append(list);
+    }
+
+    if (faq.tip) {
+      const tip = document.createElement('p');
+      tip.className = 'note faq-tip';
+      tip.textContent = faq.tip;
+      container.append(tip);
+    }
+
+    if (!faq.answer) {
+      const supportLink = document.createElement('a');
+      supportLink.className = 'text-link';
+      supportLink.href = 'faq/contact-support.html';
+      supportLink.textContent = 'Contact support →';
+      container.append(supportLink);
+    }
+
+    if (faq.id === 'download-app' || faq.question === 'Where can I download the app?') {
+      const stores = document.createElement('div');
+      stores.className = 'store-badges faq-store-badges';
+      stores.innerHTML = `
+        <a class="store-badge" href="https://apps.apple.com/us/app/locust-metro/id6757508541" aria-label="Download Locust on the App Store">
+          <img src="images/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+        <a class="store-badge store-badge-google" href="https://play.google.com/store/apps/details?id=com.lightcubesolutions.locustmobile" aria-label="Get Locust on Google Play">
+          <img src="images/get-it-on-google-play.png" alt="Get it on Google Play">
+        </a>`;
+      container.append(stores);
+    } else if (faq.url && (
+      sentenceCount(faq.answer) > 4
+      || faq.id === 'find-mfs'
+      || faq.id === 'contact-help'
+      || faq.question.startsWith('How do I find the meeting for field service')
+      || faq.question.startsWith('Who should I contact for help')
+    )) {
       const link = document.createElement('a');
       link.className = 'button';
       link.href = faq.url;
       link.textContent = `${faq.linkLabel || 'View guide'} →`;
-      container.append(link);
-    } else if (!faq.answer) {
-      const link = document.createElement('a');
-      link.className = 'text-link';
-      link.href = 'faq/contact-support.html';
-      link.textContent = 'Contact support →';
       container.append(link);
     }
   };

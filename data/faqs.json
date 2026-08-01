@@ -4,10 +4,10 @@
     "importance": 5,
     "order": 1,
     "question": "Where can I download the app?",
-    "answer": "Download the Locust app from the App Store or Google Play.",
+    "answer": "Choose the App Store for an iPhone or Google Play for an Android device. Use the download buttons below to visit the correct store and install Locust.",
     "keywords": ["download", "install", "app", "app store", "apple", "iphone", "ios", "google play", "android"],
-    "url": "faq/download-app.html",
-    "linkLabel": "View download options"
+    "url": "",
+    "linkLabel": ""
   },
   {
     "id": "use-web",
@@ -34,7 +34,7 @@
     "importance": 5,
     "order": 4,
     "question": "Where do I find emergency, parking, and other information for my shift?",
-    "answer": "",
+    "answer": "To find emergency locations, parking, and other important information for your shift, open the location schedule for your assigned shift and look for the \"Location Info & Resources\" option.",
     "keywords": ["emergency", "parking", "shift information", "shift details", "instructions", "safety", "contact", "notes"],
     "url": "",
     "linkLabel": ""
@@ -43,7 +43,7 @@
     "id": "navigate-emergency",
     "importance": 5,
     "order": 5,
-    "question": "How do I map or navigate to the emergency locations on my shift?",
+    "question": "How do I navigate to the emergency locations on my shift?",
     "answer": "",
     "keywords": ["map", "navigate", "navigation", "directions", "emergency location", "location", "address", "route", "maps", "shift"],
     "url": "",
@@ -54,30 +54,30 @@
     "importance": 4,
     "order": 6,
     "question": "Where do I view all my shifts?",
-    "answer": "See where to find all your upcoming and previous shifts in one place.",
+    "answer": "",
     "keywords": ["shifts", "my shifts", "schedule", "calendar", "upcoming", "previous", "accepted shifts", "assignments"],
-    "url": "faq/view-all-shifts.html",
-    "linkLabel": "View the shifts guide"
+    "url": "",
+    "linkLabel": ""
   },
   {
     "id": "time-away",
     "importance": 4,
     "order": 7,
     "question": "Where do I set time away?",
-    "answer": "Use time away to mark dates when you are unavailable to volunteer.",
+    "answer": "",
     "keywords": ["time away", "away", "vacation", "unavailable", "absence", "dates", "leave", "out of town"],
-    "url": "faq/set-time-away.html",
-    "linkLabel": "View the time away guide"
+    "url": "",
+    "linkLabel": ""
   },
   {
     "id": "availability",
     "importance": 4,
     "order": 8,
     "question": "Where do I change my availability?",
-    "answer": "Follow the guide to review and update your regular availability.",
+    "answer": "",
     "keywords": ["availability", "available", "schedule", "days", "times", "hours", "change availability", "update availability"],
-    "url": "faq/change-availability.html",
-    "linkLabel": "View the availability guide"
+    "url": "",
+    "linkLabel": ""
   },
   {
     "id": "other-locations",
@@ -94,7 +94,15 @@
     "importance": 5,
     "order": 10,
     "question": "I locked myself out of my Locust account. What should I do?",
-    "answer": "Try the sign-in checks and password-reset steps in the sign-in guide.",
+    "answer": "Try these steps to regain access to your Locust account:",
+    "steps": [
+      "Check that you are using the email address connected to your volunteer account.",
+      "Check for extra spaces and confirm that Caps Lock is off.",
+      "Select Forgot password? and follow the account-recovery instructions at https://locustspw.org/v2/login-help.",
+      "Open the reset email and follow its secure link.",
+      "If the email does not arrive, check your spam folder before contacting support."
+    ],
+    "tip": "Security tip: Support should never ask you to share your password.",
     "keywords": ["locked out", "lockout", "cannot login", "can't log in", "sign in", "login", "password", "reset password", "account", "access"],
     "url": "faq/sign-in-help.html",
     "linkLabel": "View sign-in help"
@@ -134,7 +142,7 @@
     "importance": 5,
     "order": 14,
     "question": "What will happen to shifts I accepted on the website after August 1?",
-    "answer": "",
+    "answer": "Shifts you already accepted will still be accepted on the Locust website and app. If you need to cancel a shift, you can still do so through the app or website.",
     "keywords": ["august 1", "aug 1", "accepted shifts", "website shifts", "existing shifts", "migration", "transfer", "scheduled", "web"],
     "url": "",
     "linkLabel": ""
@@ -144,10 +152,10 @@
     "importance": 4,
     "order": 15,
     "question": "Everything looks different. Is there a video explaining how to use the app?",
-    "answer": "Start with the essential video guides on this page for short walkthroughs of common Locust tasks.",
+    "answer": "",
     "keywords": ["video", "tutorial", "walkthrough", "overview", "different", "new app", "overwhelmed", "how to use", "training", "help"],
-    "url": "#video-guides-title",
-    "linkLabel": "Browse the video guides"
+    "url": "",
+    "linkLabel": ""
   },
   {
     "id": "contact-help",

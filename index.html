@@ -7,10 +7,12 @@
   <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
   <meta name="theme-color" content="#202534">
   <title>Sacramento Volunteer Help Center | Locust v2</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link rel="stylesheet" href="css/styles.css">
   <script src="data/faqs-fallback.js" defer></script>
   <script src="data/contact-persons-fallback.js" defer></script>
+  <script src="js/tutorial-nav.js" defer></script>
   <script src="js/main.js" defer></script>
   <script src="js/support-dock.js" defer></script>
 </head>
@@ -44,56 +46,32 @@
           <h1 id="page-title">Get started with Locust v2</h1>
           <p class="hero-copy">Short, step-by-step videos and practical instructions for the mobile and web apps.</p>
         </div>
-        <nav class="quick-nav" aria-label="On this page">
-          <p>Jump to a video</p>
-          <a href="#find-meeting">01 <span>Find a service meeting</span></a>
-          <a href="#manage-location">02 <span>Join or leave a location</span></a>
-          <a href="#find-location">03 <span>Find a location</span></a>
-        </nav>
+        <aside class="quick-nav download-card" id="download-app" aria-labelledby="download-app-title">
+          <p>Mobile app</p>
+          <h2 id="download-app-title">Download Locust App</h2>
+          <p class="download-copy">Download Locust from your device’s app store.</p>
+          <div class="store-badges">
+            <a class="store-badge" href="https://apps.apple.com/us/app/locust-metro/id6757508541" aria-label="Download Locust on the App Store">
+              <img src="images/download-on-the-app-store.svg" alt="Download on the App Store">
+            </a>
+            <a class="store-badge store-badge-google" href="https://play.google.com/store/apps/details?id=com.lightcubesolutions.locustmobile" aria-label="Get Locust on Google Play">
+              <img src="images/get-it-on-google-play.png" alt="Get it on Google Play">
+            </a>
+          </div>
+          <p class="legal-copy">Apple and the Apple Logo are trademarks of Apple Inc. App Store is a service mark of Apple Inc. Google Play and its logo are trademarks of Google LLC.</p>
+        </aside>
       </div>
     </section>
 
     <section class="shell video-section" aria-labelledby="video-guides-title">
       <div class="section-heading">
         <p class="eyebrow">Start here</p>
-        <h2 id="video-guides-title">Essential video guides</h2>
-        <p>Use the controls on any video to play, pause, adjust volume, or open it full screen.</p>
+        <h2 id="video-guides-title">How to find a location video</h2>
+        <p>Search for a location, review its details, and open directions from the app.</p>
+        <p class="video-controls-note">Use the controls to play, pause, adjust volume, or open the video full screen.</p>
       </div>
 
-      <article class="guide" id="find-meeting">
-        <div class="guide-copy">
-          <span class="step-number" aria-hidden="true">01</span>
-          <h2>How do I find the meeting for service?</h2>
-          <p>Learn where to view upcoming service meetings, check the details, and get directions.</p>
-        </div>
-        <div class="video-frame">
-          <video controls playsinline preload="metadata" aria-label="How to find a meeting for service">
-            <source src="videos/find-service-meeting.mp4" type="video/mp4">
-            Your browser does not support embedded video. <a href="videos/find-service-meeting.mp4">Download the video</a>.
-          </video>
-        </div>
-      </article>
-
-      <article class="guide" id="manage-location">
-        <div class="guide-copy">
-          <span class="step-number" aria-hidden="true">02</span>
-          <h2>How do I add or remove myself from a location?</h2>
-          <p>See how to update the locations where you volunteer from your profile.</p>
-        </div>
-        <div class="video-frame">
-          <video controls playsinline preload="metadata" aria-label="How to add or remove yourself from a location">
-            <source src="videos/manage-my-locations.mp4" type="video/mp4">
-            Your browser does not support embedded video. <a href="videos/manage-my-locations.mp4">Download the video</a>.
-          </video>
-        </div>
-      </article>
-
       <article class="guide" id="find-location">
-        <div class="guide-copy">
-          <span class="step-number" aria-hidden="true">03</span>
-          <h2>How can I find a location?</h2>
-          <p>Search for a location, review its details, and open directions from the app.</p>
-        </div>
         <div class="video-frame">
           <video controls playsinline preload="metadata" aria-label="How to find a location">
             <source src="videos/find-location.mp4" type="video/mp4">
@@ -101,16 +79,30 @@
           </video>
         </div>
       </article>
-    </section>
 
-    <section class="support-cta-section" aria-labelledby="support-cta-title">
-      <div class="shell support-cta-card">
-        <div>
-          <p class="eyebrow">Need more help?</p>
-          <h2 id="support-cta-title">Contact support</h2>
-          <p>Call, text, or email the Locust v2 Sacramento support team.</p>
-        </div>
-        <a class="button button-gradient" href="faq/contact-support.html">View support options <span aria-hidden="true">→</span></a>
+      <div class="additional-videos" aria-labelledby="additional-videos-title">
+        <h2 id="additional-videos-title">More video tutorials</h2>
+
+        <details class="video-accordion" id="find-meeting">
+          <summary><span>How to find the meeting for service</span><span class="accordion-icon" aria-hidden="true"></span></summary>
+          <div class="video-accordion-panel">
+            <p>Learn where to view upcoming service meetings, check the details, and get directions.</p>
+            <div class="video-frame">
+              <video controls playsinline preload="metadata" aria-label="How to find a meeting for service">
+                <source src="videos/find-service-meeting.mp4" type="video/mp4">
+                Your browser does not support embedded video. <a href="videos/find-service-meeting.mp4">Download the video</a>.
+              </video>
+            </div>
+          </div>
+        </details>
+
+        <details class="video-accordion" id="manage-location">
+          <summary><span>How to add or remove myself from a location</span><span class="accordion-icon" aria-hidden="true"></span></summary>
+          <div class="video-accordion-panel">
+            <p>See how to update the locations where you volunteer from your profile.</p>
+            <p class="video-coming-soon">Video coming soon</p>
+          </div>
+        </details>
       </div>
     </section>
 
@@ -140,6 +132,17 @@
             <p class="search-error">JavaScript is required to search the FAQs. Please enable JavaScript or contact support.</p>
           </noscript>
         </div>
+      </div>
+    </section>
+
+    <section class="support-cta-section" aria-labelledby="support-cta-title">
+      <div class="support-cta-card">
+        <div>
+          <p class="eyebrow">Need more help?</p>
+          <h2 id="support-cta-title">Contact support</h2>
+          <p>Call, text, or email the Locust v2 Sacramento support team.</p>
+        </div>
+        <a class="button button-gradient" href="faq/contact-support.html">View support options <span aria-hidden="true">→</span></a>
       </div>
     </section>
   </main>
