@@ -223,14 +223,6 @@ video::-webkit-media-controls-mute-button { transform: scale(1.38); transform-or
 .next-availability { padding: 1rem; border: 1px solid var(--border); border-radius: .8rem; background: var(--background); }
 .next-availability h3, .next-availability p { margin: 0; }
 .next-availability p { margin-top: .4rem; color: var(--muted); }
-.test-controls { margin-top: 1.25rem; border-top: 1px solid var(--border); }
-.test-controls summary { padding: 1rem 0 0; color: var(--muted); font-weight: 750; cursor: pointer; }
-.test-controls-inner { margin-top: 1rem; padding: 1rem; border-radius: .75rem; background: var(--background); }
-.test-controls-inner label { display: block; margin-bottom: .5rem; font-weight: 750; }
-.test-controls-inner input { width: min(100%, 22rem); min-height: 2.8rem; padding: .5rem .7rem; border: 1px solid var(--border); border-radius: .5rem; color: var(--text); background: var(--surface); font: inherit; color-scheme: dark; }
-.test-actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: .75rem; }
-.button-secondary { border: 1px solid var(--border); background: var(--surface-active); cursor: pointer; }
-.button-secondary:hover { background: var(--background); }
 .weekly-schedule { margin-top: 1rem; border-top: 1px solid var(--border); }
 .voicemail-label { margin: 1.25rem 0 0; color: var(--muted); }
 .support-phone-number { display: inline-flex; align-items: center; gap: .65rem; margin: .2rem 0 0; color: var(--icon); font-size: clamp(1.35rem, 4vw, 1.8rem); font-weight: 850; text-underline-offset: .25em; }

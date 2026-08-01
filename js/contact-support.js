@@ -6,11 +6,7 @@ if (supportSection) {
   const callSupport = document.querySelector('[data-call-support]');
   const emailLink = document.querySelector('[data-support-email]');
   const emailSetup = document.querySelector('[data-email-setup]');
-  const overrideInput = document.querySelector('[data-time-override]');
-  const applyOverride = document.querySelector('[data-apply-override]');
-  const clearOverride = document.querySelector('[data-clear-override]');
   let contactData = window.locustContactData || null;
-  let overrideTime = null;
 
   const minutesFromTime = (time) => {
     const [hours, minutes] = time.split(':').map(Number);
@@ -41,16 +37,6 @@ if (supportSection) {
       minutes,
       display: `${values.weekday}, ${values.month} ${values.day} at ${formatClock(minutes)}`
     };
-  };
-
-  const getOverrideTime = () => {
-    const [datePart, timePart] = overrideTime.split('T');
-    const [year, month, day] = datePart.split('-').map(Number);
-    const [hours, minutesPart] = timePart.split(':').map(Number);
-    const date = new Date(Date.UTC(year, month - 1, day));
-    const dayName = new Intl.DateTimeFormat('en-US', { weekday: 'long', timeZone: 'UTC' }).format(date);
-    const minutes = (hours * 60) + minutesPart;
-    return { minutes, display: `${dayName}, test time ${formatClock(minutes)}` };
   };
 
   const isPlaceholder = (value, placeholder) => !value || value.trim() === placeholder;
@@ -102,12 +88,12 @@ if (supportSection) {
   const renderAvailability = () => {
     if (!contactData) return;
 
-    const time = overrideTime ? getOverrideTime() : getSacramentoNow();
+    const time = getSacramentoNow();
     const opensAt = minutesFromTime(contactData.opensAt);
     const closesAt = minutesFromTime(contactData.closesAt);
     const isOpen = time.minutes >= opensAt && time.minutes < closesAt;
 
-    currentTime.textContent = `${overrideTime ? 'Testing' : 'Sacramento time'}: ${time.display}`;
+    currentTime.textContent = `Sacramento time: ${time.display}`;
     status.replaceChildren();
     callSupport.replaceChildren();
 
@@ -146,21 +132,6 @@ if (supportSection) {
     renderEmail();
     renderAvailability();
   };
-
-  applyOverride.addEventListener('click', () => {
-    if (!overrideInput.value) {
-      overrideInput.focus();
-      return;
-    }
-    overrideTime = overrideInput.value;
-    renderAvailability();
-  });
-
-  clearOverride.addEventListener('click', () => {
-    overrideTime = null;
-    overrideInput.value = '';
-    renderAvailability();
-  });
 
   window.addEventListener('pageshow', renderAvailability);
   document.addEventListener('visibilitychange', () => {
