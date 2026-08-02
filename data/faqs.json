@@ -44,7 +44,7 @@
     "importance": 5,
     "order": 5,
     "question": "How do I navigate to the emergency locations on my shift?",
-    "answer": "Open the location schedule for your assigned shift and select \"Location Info & Resources.\" On this page, you'll find a PDF containing emergency information and locations. The page may also include GPS navigation links to help you quickly locate emergency resources when needed.",
+    "answer": "Open the location schedule for your assigned shift and select \"Location Info & Resources.\" On this page, you'll find a PDF containing emergency information and locations. The page may also include navigation links for Apple Maps or Google Maps for to help you quickly locate emergency resources when needed.",
     "keywords": ["map", "navigate", "navigation", "directions", "emergency location", "location", "address", "route", "maps", "shift"],
     "url": "",
     "linkLabel": ""
