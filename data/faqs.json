@@ -44,7 +44,7 @@
     "importance": 5,
     "order": 5,
     "question": "How do I navigate to the emergency locations on my shift?",
-    "answer": "",
+    "answer": "Open the location schedule for your assigned shift and select \"Location Info & Resources.\" On this page, you'll find a PDF containing emergency information and locations. The page may also include GPS navigation links to help you quickly locate emergency resources when needed.",
     "keywords": ["map", "navigate", "navigation", "directions", "emergency location", "location", "address", "route", "maps", "shift"],
     "url": "",
     "linkLabel": ""
@@ -54,7 +54,7 @@
     "importance": 4,
     "order": 6,
     "question": "Where do I view all my shifts?",
-    "answer": "",
+    "answer": "You can view all of your shifts by selecting the “schedule” option in your app. In there you should see a calendar with all of your shifts marked.",
     "keywords": ["shifts", "my shifts", "schedule", "calendar", "upcoming", "previous", "accepted shifts", "assignments"],
     "url": "",
     "linkLabel": ""
@@ -64,7 +64,7 @@
     "importance": 4,
     "order": 7,
     "question": "Where do I set time away?",
-    "answer": "",
+    "answer": "The add Time Away option can be found at the top of the app's home page, or on the Time Away section on the website home page Select this option to enter the start and end dates for your time away. You can also include optional notes to provide any additional information.",
     "keywords": ["time away", "away", "vacation", "unavailable", "absence", "dates", "leave", "out of town"],
     "url": "",
     "linkLabel": ""
@@ -74,7 +74,7 @@
     "importance": 4,
     "order": 8,
     "question": "Where do I change my availability?",
-    "answer": "",
+    "answer": "The  My Availability option can be found at the top of the app's home page or, on the website, in the Zone Availability section of your schedule. Select this option to enter the times you are available to work a shift. You can also include optional notes to provide any additional information.",
     "keywords": ["availability", "available", "schedule", "days", "times", "hours", "change availability", "update availability"],
     "url": "",
     "linkLabel": ""
