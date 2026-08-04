@@ -84,7 +84,7 @@
     "importance": 4,
     "order": 9,
     "question": "I am a new volunteer. How do I access other locations in the app?",
-    "answer": "",
+    "answer": "To access other locations in the app, tap the Schedule tab to view the schedule for your shifts. When viewing your schedule tap the Change option in the upper-right corner of the screen. A list of the locations assigned to you will appear, allowing you to switch to a different location.",
     "keywords": ["new volunteer", "other locations", "access location", "join location", "add location", "manage locations", "territory", "congregation"],
     "url": "#manage-location",
     "linkLabel": "Watch the location guide"
@@ -112,7 +112,7 @@
     "importance": 3,
     "order": 11,
     "question": "What is the difference between Assigned Locations and Favorite Locations?",
-    "answer": "",
+    "answer": "Assigned Locations are the locations within the zone to which you are assigned. Favorite Locations are locations that you have personally marked as favorites in the app, making it easier to access the locations where you frequently work.",
     "keywords": ["assigned locations", "favorite locations", "favourite locations", "location difference", "assigned", "favorite", "locations"],
     "url": "",
     "linkLabel": ""
@@ -122,7 +122,7 @@
     "importance": 3,
     "order": 12,
     "question": "Can I favorite locations where I frequently schedule shifts?",
-    "answer": "",
+    "answer": "Yes. To favorite a location in the app, open your Schedule. At the top of the page, you'll see the name of the location you're currently viewing. Tap Change next to the location name to open the list of locations you're assigned to. Then, tap the star icon next to any location to add it to your favorites.",
     "keywords": ["favorite", "favourite", "frequent locations", "save location", "bookmark", "preferred location", "schedule shifts", "often"],
     "url": "",
     "linkLabel": ""
@@ -132,7 +132,7 @@
     "importance": 4,
     "order": 13,
     "question": "What do orange and blue shifts mean when key men are needed?",
-    "answer": "",
+    "answer": "When viewing the schedule, an orange shift indicates that a volunteer can join the shift. A blue shift indicates that a Key Man is needed for the shift.",
     "keywords": ["orange", "blue", "shift colors", "colours", "key men", "keyman", "key men needed", "color meaning", "legend"],
     "url": "",
     "linkLabel": ""
